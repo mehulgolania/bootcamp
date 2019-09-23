@@ -1,0 +1,117 @@
+@charset "utf-8";
+/* CSS Document */
+
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, dialog, div, dl, dt, em, embed, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, meter, nav, object, ol, output, p, pre, progress, q, rp, rt, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video, xmp { border: 0; margin: 0; padding: 0; font-size: 100%; outline:none;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block;}
+
+table { border-collapse: collapse; border-spacing: 0;}
+
+body { width:100%; word-wrap:break-word; font-family:'Open Sans', sans-serif;}
+
+
+/***************** HELPER CLASS *******************/
+a{display:block;}
+a:hover {text-decoration:none;color:#92cd3f;}
+a:focus {text-decoration:none; outline:none;}
+a:active {text-decoration:none; outline:none;}
+
+.full-width{width:100%;}
+.half-width{width:50%;}
+.width-content{width:1200px;max-width:100%;margin:0 auto;padding:0 15px;box-sizing:border-box;}
+.left{float:left;}
+.right{float:right;}
+.clearfix{clear:both;}
+.last{padding-right:0; border-right:none;}
+.icon{display:inline-block;vertical-align:middle;margin:0 10px 0 0;}
+.text-center{text-align:center;}
+.text-right{text-align:right;}
+.bold{font-weight:bold;}
+.white-section{background:#fff;}
+.green-highlight{color:#92cd3f;}
+.dark-blue{background:#242831;}
+.light-gray{background:#f3f4f6;}
+.vert-base{vertical-align:baseline;}
+
+
+/***************** MAIN SECTION *******************/
+.main-header{padding:20px 0;}
+.main-section{background:url('../img/main-section-bg.jpg') no-repeat;background-size:cover;filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/main-section-bg.jpg', sizingMethod='scale');
+-ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/main-section-bg.jpg', sizingMethod='scale');}
+.contact-section{font-family:'Arial', Helvetica, sans-serif;padding:12px 0;}
+.contact-section ul li{display:inline-block;vertical-align:middle;font-size:16px;color:#fff;}
+.contact-section ul li.piep{font-size:14px;margin:0 25px;vertical-align:middle;}
+.contact-section ul li a{color:#fff;letter-spacing:1.5px;}
+.contact-section ul li a > span.call-icon{width:22px;height:22px;overflow:hidden;background:url('../img/contact-sprite.png') no-repeat 0 0;}
+.contact-section ul li a > span.mail-icon{width:22px;height:18px;overflow:hidden;background:url('../img/contact-sprite.png') no-repeat -23px 0;}
+.contact-section ul li a > span{display:inline-block;vertical-align:middle;}
+
+.bootcamp-section{margin:80px 0 60px 0;}
+
+.event-section{font-family:'Open Sans', sans-serif;font-weight:400;}
+.event-section > h1{font-size:55px;color:#fff;margin:0 0 35px;}
+.event-section > p{width:100%;display:inline-block;font-size:18px;color:#fff;letter-spacing:0.4px;line-height:30px;margin:0 0 125px;}
+
+/***************** ABOUT SECTION *******************/
+.about-section{border-top:4px solid #f1f1f1;}
+.about-content{font-family: 'Open Sans', sans-serif;}
+.about-content h2{font-size:36px;color:#333;letter-spacing:1.5px;margin:90px 0 60px 0;}
+.about-content p{font-size:16px;line-height:30px;color:#333;margin:0 0 35px;}
+
+.benifit-section h2{font-size:26px;color:#000;letter-spacing:1.5px;margin:0 0 30px;}
+.benifit-section ul{padding:0 0 0 60px;}
+.benifit-section ul li{padding:0 0 0 15px;font-size:10px;}
+.benifit-section ul li > span{font-size:16px;line-height:30px;color:#333;letter-spacing:0.5px;}
+.benifit-section .location-section ul li > span a{color:#333;display:inline;}
+.benifit-section .location-section ul li > span a:hover{color:#92cd3f;}
+.benifit-section .note{margin:30px 0 60px 0;}
+.benifit-section .note > p{font-size:14px;}
+.benifit-content{padding:0 20px 0 0;}
+
+/***************** REGISTER SECTION *******************/
+.register-section{background:url('../img/register-bg.jpg') no-repeat;background-size:cover;filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/register-bg.jpg', sizingMethod='scale');
+-ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/register-bg.jpg', sizingMethod='scale');}
+.register-content{padding:50px 0 40px 0;}
+.register-content h2{font-size:22px;color:#fff;border-bottom:7px solid rgba(255,255,255, 0.5);padding:0 0 15px;text-transform:uppercase;letter-spacing:1px;display:inline-block;width:100%;}
+.register-content h2 > span.no-cost{font-weight:600;font-size:16px;color:#000;margin:5px 0 0;}
+.register-content .required{font-size:12px;color:#fff;text-transform:uppercase;letter-spacing:1.5px;margin:30px 0 0;}
+.register-form .feild-section{margin:0 0 30px;}
+.register-form .feild-section > label, .register-form .feild-section > input{display:block;}
+.register-form .feild-section > input, 
+.register-form .feild-section > select{width:85%;border:1px solid #fff;box-sizing:border-box;background-color:transparent;font-size:14px;color:#fff;padding:11.5px 10px;letter-spacing:0.5px;outline:0;text-transform:capitalize;}
+.register-form .feild-section > select{line-height:39px;}
+.register-form .feild-section > select > option{color:#333;}
+.register-form .feild-section > label{font-size:16px;color:#fff;font-weight:400;letter-spacing:1.5px;margin:0 0 10px;}
+.register-form .feild-section .terms{text-transform:uppercase;font-size:12px;color:#fff;letter-spacing:1px;}
+.register-form .feild-section .terms > span{display:inline;vertical-align:middle;}
+.register-form .feild-section .terms > span > input[type="checkbox"]{background-color:transparent;border:1px solid #fff;margin:0 15px 0 0;}
+.register-form .feild-section .terms > span > span > a{display:inline-block;color:#fff;}
+.register-form .feild-section > input[type="submit"]{width:auto;background:#77c04b;border:0;text-transform:uppercase;font-size:14px;letter-spacing:1.5px;padding:8px 15px;margin:20px 0 0;}
+
+
+/***************** DAY 1 SECTION *******************/
+.day-1-bg{background:#f3f4f6 url('../img/day-1-bg.jpg') no-repeat 100% 0;}
+.days-1-content{margin:60px 0 0;}
+.days-content{padding:0px 10px 50px 10px;}
+.days-content h2{font-size:35px;color:#323c45;letter-spacing:0.4px;display:inline-block;margin:50px 0 0;}
+.days-content h2 span{display:inline-block;border-bottom:1px solid #92cd3f;padding:0 0 10px 5px;}
+.days-content ul{margin:30px 0 0;list-style-image:url('../img/list-icon.png');line-height:35px;padding:0 0 0 40px;}
+.days-content ul li{padding:0 0 0 20px;}
+.days-content ul li span{font-weight:600;font-size:14px;color:#323c45;letter-spacing:1px;}
+.days-content .day-heading{font-size:36px;color:#333;letter-spacing:0.4px;}
+.days-content .day-heading span{display:inline-block;vertical-align:baseline;}
+.days-content .day-heading span.day{position:relative;top:-13px;margin:0 20px 0 0;}
+.days-content .day-heading span > img{vertical-align:baseline;}
+
+/***************** DAY 2 SECTION *******************/
+#day-2 .days-content{padding:0 10px;}
+.day-2-bg{background:url('../img/day-2-bg.jpg') no-repeat 0 center;}
+.days-2-content{margin:50px 0 0;}
+.days-2-content h2{margin:0;}
+.aurafx-logo{margin:50px 0 0 20px;}
+.further-details{border-top:2px solid #e9eff2;margin:60px 0 0;padding:50px 0 40px 0;}
+.further-details p{font-size:12px;color:#999;letter-spacing:0.4px;line-height:24px;}
+
+/***************** FOOTER SECTION *******************/
+.copyright{font-size:14px;color:#fff;letter-spacing:1.8px;padding:29px 0;}
+
+
