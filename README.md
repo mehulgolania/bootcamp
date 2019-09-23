@@ -1,4 +1,6 @@
 # Bootcamp
+![showcase](screenshot.png)
 
-This is just a Landing page.
+## About Project
+This is just a landing page.
 [Click here for Demo](https://bootcamp.mehulgolania.now.sh)
